@@ -1,74 +1,58 @@
 import {
   BsFillMoonStarsFill,
-  BsLinkedin,
   BsGithub,
-  BsLink,
+  BsLinkedin,
 } from "react-icons/bs";
+import {React, useState} from "react";
 
-import { HashLink } from "react-router-hash-link";
+import { IconContext } from "react-icons";
+import { Link } from "./Link";
+import { Namecard } from "./Namecard";
 import { BrowserRouter as Router } from "react-router-dom";
 
-function Nav() {
+function Nav(props) {
   return (
-    <nav className="col-span-2 bg-primary-500">
-      <div className="sticky top-0 text-white h-screen font-mono">
-        <h1 className="text-5xl p-10 text-center">
-          &lt;/Chris Chang&gt;
-        </h1>
+    <nav className="flex flex-row sticky top-0 z-50 h-16 items-center justify-around bg-accent-950">
+      <Namecard />
+      <div id="router" className="basis-1/2">
         <Router>
-          <ul className="space-y-4 px-8">
-            <li className="group">
-              <div className="group-hover:bg-vsblack-500">
-                <HashLink to="#about">
-                  <div className="px-2 transition ease-in-out delay-50 group-hover:translate-x-4 group-hover:ease-in">
-                    <span className="text-2xl">
-                      &lt;/about&gt;
-                    </span>
-                  </div>
-                </HashLink>
-              </div>
-            </li>
-            <li className="group">
-              <div className="group-hover:bg-vsblack-500">
-                <HashLink to="#experience">
-                  <div className="px-2 transition ease-in-out delay-50 group-hover:translate-x-4 group-hover:ease-in">
-                    <span className="text-2xl">
-                      &lt;/experience&gt;
-                    </span>
-                  </div>
-                </HashLink>
-              </div>
-            </li>
-            <li className="group">
-              <div className="group-hover:bg-vsblack-500">
-                <HashLink to="#projects">
-                  <div className="px-2 transition ease-in-out delay-50 group-hover:translate-x-4 group-hover:ease-in">
-                    <span className="text-2xl">
-                      &lt;/projects&gt;
-                    </span>
-                  </div>
-                </HashLink>
-              </div>
-            </li>
-            <li className="group">
-              <div className="group-hover:bg-vsblack-500">
-                <HashLink to="#contact">
-                  <div className="px-2 transition ease-in-out delay-50 group-hover:translate-x-4 group-hover:ease-in">
-                    <span className="text-2xl">
-                      &lt;/contact&gt;
-                    </span>
-                  </div>
-                </HashLink>
-              </div>
-            </li>
-          </ul>
-        </Router>
-        <div className="absolute bottom-0 left-0 w-full">
-          <div className="flex justify-center p-4 m-10 space-x-8">
-            <BsGithub size={30} />
-            <BsLinkedin size={30} />
+          <div className="flex flex-row space-x-2 justify-around">
+            <Link route="about" />
+            <Link route="experience" />
+            <Link route="projects" />
+            <Link route="contact" />
           </div>
-        </div>
+        </Router>
+      </div>
+      <div
+        id="icons"
+        className="basis-1/4 flex flex-row justify-center items-center space-x-10"
+      >
+        <IconContext.Provider
+          value={{
+            color: "white",
+            className: "global-class-name",
+          }}
+        >
+          <button onClick={props.toggleDarkMode}>
+
+          <BsFillMoonStarsFill size={25} />
+          </button>
+          {/* <a
+            href="https://github.com/chrischang5"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <BsGithub size={25} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/chrischang150/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <BsLinkedin size={25} />
+          </a> */}
+        </IconContext.Provider>
       </div>
     </nav>
   );
