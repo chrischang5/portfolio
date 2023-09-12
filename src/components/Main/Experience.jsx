@@ -13,7 +13,7 @@ export function Experience() {
           bullets={[
             "Designed and implemented five new features in test suite infrastructure, contributing to a 100% reduction in false fails for five tests.",
             "Created over 200 automated regression tests, resulting in 10 regressions being flagged and fixed.",
-            "Applied white-box and black-box testing strategies to validate functionality of 100 internal and using-facing features.",
+            "Applied white-box and black-box testing strategies to validate functionality of 100 internal and user-facing features.",
           ]}
           start="January 2023"
           end="August 2023"
