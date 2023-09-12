@@ -3,8 +3,6 @@ import Section from "./Section";
 import Title from "./Title";
 
 export function Projects() {
-  const desc =
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, architecto eius? Voluptatum doloribus ex nobis, libero repudiandae officia aliquam consectetur asperiores quia excepturi omnis ratione unde laborum.";
   return (
     <Section id="projects">
       <Title title="projects" />
@@ -14,36 +12,24 @@ export function Projects() {
           subtitle="UBC Solar"
           start="January 2021"
           end="May 2022"
-          desc="As Simulation Lead"
-          skills={["Python", "PyTest", "Matlab", "Golang", "Git", "Github Actions"]}
+          link="https://github.com/UBC-Solar/Simulation"
+          desc="UBC Solar is a student-led engineering design team at the University of British Columbia. The Simulation is a program that aims to predict, optimize, vehicle performance in the American Solar Challenge (ASC) and Formula Sun Grand Prix (FSGP). I implemented a variety of features for the Simulation such as the FSGP Simulation functionality, mathematical models to approximate vehicle component behaviour, and performance speedup for critical sections"
+          skills={[
+            "Python",
+            "PyTest",
+            "Matlab",
+            "Golang",
+            "Git",
+            "Github Actions",
+          ]}
         />
         <ProjectCard
-          name="Project Name"
-          start="January 2099"
-          end="June 2019"
-          desc={desc}
-          skills={["JavaScript", "HTML", "C++", "GitHub"]}
-        />
-        <ProjectCard
-          name="Project Name"
-          start="January 2099"
-          end="June 2019"
-          desc={desc}
-          skills={["JavaScript", "HTML", "C++", "GitHub"]}
-        />
-        <ProjectCard
-          name="Project Name"
-          start="January 2099"
-          end="June 2019"
-          desc={desc}
-          skills={["JavaScript", "HTML", "C++", "GitHub"]}
-        />
-        <ProjectCard
-          name="Project Name"
-          start="January 2099"
-          end="June 2019"
-          desc={desc}
-          skills={["JavaScript", "HTML", "C++", "GitHub"]}
+          name="Personal Portfolio"
+          start="August 2023"
+          end="Ongoing"
+          link="https://chrischang5.github.io/portfolio/"
+          desc={"This project was to kill two birds with one stone: Learn web development and create a personal website. You're on this project now!"}
+          skills={["React", "JavaScript", "Tailwind"]}
         />
       </div>
     </Section>
