@@ -5,22 +5,25 @@ import { IconContext } from "react-icons";
 import Section from "./Section";
 import Title from "./Title";
 
-export function Contact() {
+export function Contact(props) {
   return (
     <Section id="contact">
       <Title title="contact" />
-      <div 
-        id="icons"
-        className="flex flex-col text-dark dark:text-light py-10"
-      >
+      <div id="icons" className="flex flex-col py-10">
         <a
           href="mailto:christopherchang150@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex text-paragraph space-x-8"
         >
-          <GrMail size={25} />
-          <p>Email</p>
+          <IconContext.Provider
+            value={{
+              color: props.darkMode ? "white" : "black",
+            }}
+          >
+            <GrMail size={25} />
+          </IconContext.Provider>
+          <p className="text-dark dark:text-light">Email</p>
         </a>
         <a
           href="https://www.linkedin.com/in/chrischang150/"
@@ -28,8 +31,16 @@ export function Contact() {
           rel="noopener noreferrer"
           className="inline-flex text-paragraph space-x-8"
         >
-          <BsLinkedin size={25} />
-          <p>LinkedIn</p>
+          <IconContext.Provider
+            value={{
+              color: props.darkMode ? "white" : "black",
+            }}
+          >
+            <BsLinkedin size={25} />
+          </IconContext.Provider>
+          <p className="text-dark dark:text-light">
+            LinkedIn
+          </p>
         </a>
         <a
           href="https://github.com/chrischang5"
@@ -37,8 +48,16 @@ export function Contact() {
           rel="noopener noreferrer"
           className="inline-flex text-paragraph space-x-8"
         >
-          <BsGithub size={25} />
-          <p>GitHub</p>
+          <IconContext.Provider
+            value={{
+              color: props.darkMode ? "white" : "black",
+            }}
+          >
+            <BsGithub size={25} />
+          </IconContext.Provider>
+          <p className="text-dark dark:text-light">
+            GitHub
+          </p>
         </a>
       </div>
     </Section>

@@ -3,7 +3,7 @@ import { Contact } from "./Contact";
 import { Experience } from "./Experience";
 import { Projects } from "./Projects";
 
-export function Body() {
+export function Body(props) {
   return (
     <div className="grid grid-cols-11 h-fit w-full bg-primary-100 dark:bg-primary-950">
       <div className="col-span-2"/>
@@ -11,7 +11,7 @@ export function Body() {
         <About />
         <Experience />
         <Projects/>
-        <Contact />
+        <Contact darkMode={props.darkMode}/>
       </div>
       <div className="col-span-2"/>
     </div>
