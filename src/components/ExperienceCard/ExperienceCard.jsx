@@ -15,7 +15,7 @@ function ExperienceCard({
           <h1 className="font-poppins text-subtitle font-bold text-dark dark:text-light md:col-start-1">
             {company}
           </h1>
-          <span className="order-2 md:order-1 col-start-1 font-poppins text-date font-light text-dark dark:text-light md:col-start-2">
+          <span className="order-2 md:order-1 text-start md:text-end col-start-1 font-poppins text-date font-light text-dark dark:text-light md:col-start-2">
             {start} - {end}
           </span>
           <h1 className="order-1 col-end-2 font-inter text-paragraph font-light text-dark dark:text-light md:col-start-1">
