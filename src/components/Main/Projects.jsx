@@ -6,7 +6,7 @@ export function Projects() {
   return (
     <Section id="projects">
       <Title title="projects" />
-      <div className="grid grid-flow-row grid-cols-2 gap-10 justify-center items-center py-10 text-light">
+      <div className="mt-auto grid grid-flow-col md:grid-flow-row md:grid-cols-2 items-center justify-center gap-10 py-10 text-light">
         <ProjectCard
           name="UBC Solar Simulation"
           subtitle="UBC Solar"
@@ -28,7 +28,9 @@ export function Projects() {
           start="August 2023"
           end="Ongoing"
           link="https://chrischang5.github.io/portfolio/"
-          desc={"This project was to kill two birds with one stone: Learn web development and create a personal website. You're on this project now!"}
+          desc={
+            "This project was to kill two birds with one stone: Learn web development and create a personal website. You're on this project now!"
+          }
           skills={["React", "JavaScript", "Tailwind"]}
         />
       </div>

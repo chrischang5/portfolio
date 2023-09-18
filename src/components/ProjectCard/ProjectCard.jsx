@@ -12,18 +12,18 @@ function ProjectCard({
   skills = [],
 }) {
   return (
-    <div className="flex flex-col light:bg-primary-100 dark:bg-primary-950 p-4 hover:bg-primary-200 dark:hover:bg-primary-925 transition ease-in-out delay-50 hover:-translate-y-1.5 group-hover:scale-105 duration-100">
+    <div className="light:bg-primary-100 delay-50 flex h-auto flex-col p-4 transition duration-100 ease-in-out hover:-translate-y-1.5 hover:bg-primary-200 group-hover:scale-105 dark:bg-primary-950 dark:hover:bg-primary-925">
       {/* <img src="./Untitled.png" className="h-auto max-w-full" alt="hi" /> */}
       {/* <div className="w-full h-[200px] bg-project-preview"></div> */}
-      <div className="flex flex-nowrap justify-between items-center space-x-3">
-        <h1 className="font-poppins font-bold text-subtitle text-dark dark:text-light">
+      <div className="flex flex-col flex-nowrap justify-between space-x-3 md:flex-row md:items-center">
+        <h1 className="font-poppins text-subtitle font-bold text-dark dark:text-light">
           {name}
         </h1>
-        <span className="font-poppins font-light text-date text-dark dark:text-light">
+        <span className="font-poppins text-date font-light text-dark dark:text-light">
           {start} - {end}
         </span>
       </div>
-      <h1 className="pt-2 font-inter font-light text-paragraph text-dark dark:text-light">
+      <h1 className="pt-2 font-inter text-paragraph font-light text-dark dark:text-light">
         {subtitle}
       </h1>
       {link ? (
@@ -44,10 +44,10 @@ function ProjectCard({
         {skills.map((skill) => {
           return (
             <li
-              className="transition ease-in-out hover:-translate-y-1.5 hover:scale-105 duration-100 flex items-center rounded-full mx-1 my-1 px-1.5 py-1 bg-accent-950"
+              className="mx-1 my-1 flex items-center rounded-full bg-accent-950 px-1.5 py-1 transition duration-100 ease-in-out hover:-translate-y-1.5 hover:scale-105"
               key={skill}
             >
-              <span className="font-inter text-pill align-middle text-center text-accent-100 flex-grow">
+              <span className="flex-grow text-center align-middle font-inter text-pill text-accent-100">
                 {skill}
               </span>
             </li>

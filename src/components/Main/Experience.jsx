@@ -6,7 +6,7 @@ export function Experience() {
   return (
     <Section id="experience">
       <Title title="experience" />
-      <div className="flex flex-col justify-center items-center text-light py-10">
+      <div className="flex flex-col items-center justify-center py-10 text-light">
         <ExperienceCard
           role="Quality Analyst Intern"
           company="Safe Software"
@@ -37,13 +37,7 @@ export function Experience() {
           ]}
           start="May 2022"
           end="December 2022"
-          skills={[
-            "Python",
-            "Git",
-            "GitHub Actions",
-            "DML",
-            "Simics",
-          ]}
+          skills={["Python", "Git", "GitHub Actions", "DML", "Simics"]}
         />
         <ExperienceCard
           role="Software Engineer Co-op"
@@ -55,12 +49,7 @@ export function Experience() {
           ]}
           start="June 2020"
           end="August 2020"
-          skills={[
-            "JavaScript",
-            "Cypress.io",
-            "Jenkins",
-            "Git",
-          ]}
+          skills={["JavaScript", "Cypress.io", "Jenkins", "Git"]}
         />
       </div>
     </Section>

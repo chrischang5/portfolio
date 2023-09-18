@@ -4,18 +4,18 @@ const colors = require("tailwindcss/colors");
 
 module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
-  darkMode: 'class',
+  darkMode: "class",
   theme: {
     fontSize: {
       title: `2.5rem;`,
       subtitle: `1.85rem`,
       paragraph: `1.2rem`,
-      date: '1.0rem',
+      date: "1.0rem",
       pill: `0.85rem`,
     },
     colors: {
       light: colors.white,
-      dark: colors.black
+      dark: colors.black,
     },
     extend: {
       // backgroundImage: {
