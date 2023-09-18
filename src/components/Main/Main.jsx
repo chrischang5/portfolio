@@ -8,11 +8,11 @@ function Main() {
 
   const toggleDarkMode = () => {
     setDarkMode((current) => !current);
-  }
+  };
   return (
-    <main className={darkMode ? "dark" : ""}>
-      <Nav toggleDarkMode={toggleDarkMode}/>
-      <Body darkMode={darkMode}/>
+    <main className={`${darkMode ? "dark" : ""}`}>
+      <Nav toggleDarkMode={toggleDarkMode} />
+      <Body darkMode={darkMode} />
     </main>
   );
 }
