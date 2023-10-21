@@ -5,7 +5,7 @@ export function About() {
   return (
     <Section id="about">
       <Title title="About Me" />
-      <div className="flex flex-col items-center justify-center space-x-10 space-y-10 md:flex-row">
+      <div className="flex flex-col items-center justify-center space-x-10 space-y-10 sm:flex-row">
         <div className="text-inter basis-1/2 text-paragraph text-dark dark:text-light">
           Hi! I'm Chris. I'm a fourth year student studying Computer Engineering
           at the University of British Columbia in Vancouver, Canada.

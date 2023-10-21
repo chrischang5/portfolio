@@ -6,7 +6,7 @@ export function Projects() {
   return (
     <Section id="projects">
       <Title title="projects" />
-      <div className="mt-auto grid grid-flow-col md:grid-flow-row md:grid-cols-2 items-center justify-center gap-10 py-10 text-light">
+      <div className="mt-auto grid grid-flow-col sm:grid-flow-row sm:grid-cols-2 items-center justify-center gap-10 py-10 text-light">
         <ProjectCard
           name="UBC Solar Simulation"
           subtitle="UBC Solar"
