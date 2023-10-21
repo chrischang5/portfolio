@@ -10,7 +10,7 @@ function Main() {
     setDarkMode((current) => !current);
   };
   return (
-    <main className={`${darkMode ? "dark" : ""}`}>
+    <main className={`${darkMode ? "dark" : ""} overflow-x-hidden`}>
       <Nav toggleDarkMode={toggleDarkMode} />
       <Body darkMode={darkMode} />
     </main>
