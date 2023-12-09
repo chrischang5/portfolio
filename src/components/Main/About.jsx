@@ -13,7 +13,7 @@ export function About() {
         <div className="basis-1/2" id="photo">
           <img
             className="rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/content-gallery-3.png"
+            src={require("./chris.JPG")}
             alt="image description"
           />
         </div>

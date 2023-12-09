@@ -13,8 +13,6 @@ function ProjectCard({
 }) {
   return (
     <div className="light:bg-primary-100 delay-50 flex h-auto flex-col p-4 transition duration-100 ease-in-out hover:-translate-y-1.5 hover:bg-primary-200 group-hover:scale-105 dark:bg-primary-950 dark:hover:bg-primary-925">
-      {/* <img src="./Untitled.png" className="h-auto max-w-full" alt="hi" /> */}
-      {/* <div className="w-full h-[200px] bg-project-preview"></div> */}
       <div className="flex flex-col flex-nowrap justify-between space-x-3 md:flex-row md:items-center">
         <h1 className="font-poppins text-subtitle font-bold text-dark dark:text-light">
           {name}
