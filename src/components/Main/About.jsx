@@ -7,7 +7,7 @@ export function About() {
       <Title title="About Me" />
       <div className="flex flex-col items-center justify-center space-x-10 space-y-10 md:flex-row">
         <div className="text-inter basis-1/2 text-paragraph text-dark dark:text-light">
-          Hi! I'm Chris. I studied Computer Engineering at UBC. I'm currently working as a Software Engineer in the Metro vancouver area!
+          Hi! I'm Chris. I studied Computer Engineering at UBC. I'm currently working as a Software Engineer in the Metro Vancouver area!
         </div>
         <div className="basis-1/2" id="photo">
           <img
