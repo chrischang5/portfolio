@@ -8,6 +8,22 @@ export function Experience() {
       <Title title="experience" />
       <div className="flex flex-col items-center justify-center py-10 text-light">
         <ExperienceCard
+          role="Software Engineer II"
+          company="Safe Software"
+          bullets={[]}
+          start="June 2025"
+          end="Present"
+          skills={["C++", "Visual Studio", "Git", "Github", "Claude Code"]}
+        />
+        <ExperienceCard
+          role="Software Engineer I"
+          company="Safe Software"
+          bullets={[]}
+          start="June 2024"
+          end="May 2025"
+          skills={["C++", "Visual Studio", "Git", "Github"]}
+        />
+        <ExperienceCard
           role="Quality Analyst Intern"
           company="Safe Software"
           bullets={[
