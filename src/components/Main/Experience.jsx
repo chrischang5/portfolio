@@ -17,15 +17,7 @@ export function Experience() {
           ]}
           start="January 2023"
           end="August 2023"
-          skills={[
-            "C++",
-            "Visual Studio",
-            "Git",
-            "Windows",
-            "Linux",
-            "MacOS",
-            "FME",
-          ]}
+          skills={["C++", "Visual Studio", "Python", "Git", "Github"]}
         />
         <ExperienceCard
           role="Emulation Engineering Co-op"
