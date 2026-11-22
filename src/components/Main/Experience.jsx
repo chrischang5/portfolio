@@ -35,9 +35,8 @@ export function Experience() {
           role="Quality Analyst Intern"
           company="Safe Software"
           bullets={[
-            "Designed and implemented five new features in test suite infrastructure, contributing to a 100% reduction in false fails for five tests.",
-            "Created over 200 automated regression tests, resulting in 10 regressions being flagged and fixed.",
-            "Applied white-box and black-box testing strategies to validate functionality of 100 internal and user-facing features.",
+            "Extended regression test infrastructure with 5 configurable options written in C++ that accounted for cross-platform differences in test results, eliminating false fails in 60 regression tests.",
+            "Authored 200+ automated regression tests using white-box and black-box testing strategies, expanding test coverage for 100+ features.",
           ]}
           start="January 2023"
           end="August 2023"
