@@ -55,11 +55,10 @@ export function Experience() {
           skills={["Python", "Git", "GitHub Actions", "DML", "Simics"]}
         />
         <ExperienceCard
-          role="Software Engineer Co-op"
+          role="Software Engineer Intern"
           company="CareCru"
           bullets={[
-            "Implemented scripts to test use cases of three user features using JavaScript and Cypress.io",
-            "Integrated test scripts with Jenkins to perform user feature testing automatically and improve API test coverage by 10%.",
+            "Created a Jenkins pipeline to run Cypress end-to-end tests for 3 user features, improving test coverage by 10%.",
             "Collaborated in an agile environment to plan user stories, project requirements, project timelines.",
           ]}
           start="June 2020"
