@@ -43,12 +43,12 @@ export function Experience() {
           skills={["C++", "Visual Studio", "Python", "Git", "Github"]}
         />
         <ExperienceCard
-          role="Emulation Engineering Co-op"
+          role="Emulation Engineering Intern"
           company="Intel"
           bullets={[
-            "Developed, tested, and released a DML and Python-based emulation model for a mailbox communication device three weeks ahead of schedule.",
+            "Developed, tested, and released a Python emulation model for a mailbox communication device, delivering 3 weeks ahead of schedule.",
             "Implemented and tested over 15 features for an internal development tool using Python and a PyTest unit test suite, achieving 100%-line coverage.",
-            "Configured GitHub Actions workflows to automatically run regression tests, update software dependencies, and report code coverage.",
+            "Configured GitHub Actions workflows to automate regression testing, dependency updates, and code coverage reporting.",
           ]}
           start="May 2022"
           end="December 2022"
