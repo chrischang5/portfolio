@@ -21,9 +21,12 @@ export function Experience() {
           skills={["C++", "Visual Studio", "Git", "Github", "Claude Code"]}
         />
         <ExperienceCard
-          role="Software Engineer I"
+          role="Software Developer I"
           company="Safe Software"
-          bullets={[]}
+          bullets={[
+            "Maintained production C++ code by diagnosing and resolving 30 crashes, memory-safety defects, performance bottlenecks.",
+            "Designed and implemented 2D geometry validation and repair algorithms based on Open Geospatial Consortium (OGC) standards, enabling users to successfully export spatial data to Oracle Spatial, Snowflake, and Microsoft SQL Server platforms.",
+          ]}
           start="June 2024"
           end="May 2025"
           skills={["C++", "Visual Studio", "Git", "Github"]}
