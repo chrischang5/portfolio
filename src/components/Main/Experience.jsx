@@ -8,9 +8,14 @@ export function Experience() {
       <Title title="experience" />
       <div className="flex flex-col items-center justify-center py-10 text-light">
         <ExperienceCard
-          role="Software Engineer II"
+          role="Software Developer II"
           company="Safe Software"
-          bullets={[]}
+          bullets={[
+            "Led a team of 3 developers and collaborated with cross-functional stakeholders to scope, design, and deliver a 3D swept-geometry feature that lets users generate CAD models of infrastructure such as rails, tunnels, and pipes.",
+            "Accelerated ticket quality assurance (QA) across 3 development teams, cutting review time by over 50% from hours to minutes, by initiating development of an automated AI test harness.",
+            "Rewrote a C++ 2D geometry snapping algorithm, fixing 8 existing bugs and refactoring it into a modular design that was extended to build the 3D snapping and priority snapping features.",
+            "Mentored a student intern over an 8-month term as primary code reviewer and technical advisor, guiding the research, design, and implementation of 6 geometry-to-geometry distance calculations.",
+          ]}
           start="June 2025"
           end="Present"
           skills={["C++", "Visual Studio", "Git", "Github", "Claude Code"]}
