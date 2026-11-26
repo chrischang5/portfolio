@@ -9,7 +9,7 @@ function ExperienceCard({
   skills = [],
 }) {
   return (
-    <div className="group m-4 h-fit w-full bg-primary-200 dark:bg-primary-925 sm:bg-primary-100 sm:dark:bg-primary-950">
+    <div className="group my-4 h-fit w-full sm:m-4 bg-primary-200 dark:bg-primary-925 sm:bg-primary-100 sm:dark:bg-primary-950">
       <div className="sm:delay-50 flex flex-col p-4 sm:transition sm:duration-100 sm:ease-in-out sm:group-hover:-translate-y-0.5 sm:group-hover:scale-105 sm:group-hover:bg-primary-200 sm:dark:group-hover:bg-primary-925">
         <div className="grid grid-cols-1 grid-rows-3 items-center sm:grid-cols-2 sm:grid-rows-2">
           <h1 className="font-poppins text-subtitle font-bold text-dark dark:text-light sm:col-start-1">
@@ -22,7 +22,7 @@ function ExperienceCard({
             {role}
           </h1>
         </div>
-        <ul className="list-outside list-disc px-12 py-6 font-inter marker:text-dark marker:dark:text-light">
+        <ul className="list-outside list-disc space-y-1 py-4 pl-5 font-inter text-[0.95rem] leading-snug sm:space-y-0 sm:px-12 sm:py-6 sm:text-[1rem] sm:leading-normal marker:text-dark marker:dark:text-light">
           {bullets.map((text) => {
             return (
               <li key={text}>
