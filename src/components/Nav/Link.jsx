@@ -5,7 +5,7 @@ export function Link({ route, onClick }) {
   return (
     <HashLink to={routelink} onClick={onClick}>
       <div className="group transition delay-150 ease-in-out">
-        <div className="group-hover:border-neutral border-spacing-8 border-b border-accent py-2 duration-300 hover:-translate-y-1 hover:scale-110">
+        <div className="border-b border-accent py-2 duration-300 hover:-translate-y-1 hover:scale-110">
           <span className="font-source-code text-paragraph text-light group-hover:text-accent-100">
             &lt;{route}/&gt;
           </span>
