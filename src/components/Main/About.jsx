@@ -13,7 +13,7 @@ export function About() {
           <img
             className="rounded-lg"
             src={require("./chris.JPG")}
-            alt="image description"
+            alt="Photo of Chris Chang"
           />
         </div>
       </div>
