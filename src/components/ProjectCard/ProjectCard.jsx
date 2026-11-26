@@ -26,7 +26,7 @@ function ProjectCard({
       </h1>
       {link ? (
         <a
-          className="text-link flex items-center"
+          className="text-link flex items-center text-dark dark:text-light"
           href={link}
           target="_blank"
           rel="noopener noreferrer"
