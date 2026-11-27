@@ -1,5 +1,6 @@
 import Section from "./Section";
 import Title from "./Title";
+import chrisPhoto from "./chris.JPG";
 
 export function About() {
   return (
@@ -12,7 +13,7 @@ export function About() {
         <div className="basis-1/2" id="photo">
           <img
             className="rounded-lg"
-            src={require("./chris.JPG")}
+            src={chrisPhoto}
             alt="Photo of Chris Chang"
           />
         </div>
