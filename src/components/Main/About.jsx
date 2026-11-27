@@ -1,3 +1,4 @@
+import { Contact } from "./Contact";
 import Section from "./Section";
 import Title from "./Title";
 import chrisPhoto from "./chris.JPG";
@@ -17,6 +18,9 @@ export function About() {
             alt="Photo of Chris Chang"
           />
         </div>
+      </div>
+      <div className="mt-10 flex justify-center">
+        <Contact />
       </div>
     </Section>
   );
