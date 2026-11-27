@@ -1,5 +1,4 @@
 import { About } from "./About";
-import { Contact } from "./Contact";
 import { Experience } from "./Experience";
 import { Projects } from "./Projects";
 
@@ -11,7 +10,6 @@ export function Body(props) {
         <About />
         <Experience />
         <Projects />
-        <Contact darkMode={props.darkMode} />
       </div>
       <div className="hidden sm:col-span-2 sm:block" />
     </div>

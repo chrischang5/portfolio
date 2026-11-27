@@ -1,65 +1,47 @@
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 import { GrMail } from "react-icons/gr";
-import { IconContext } from "react-icons";
-import Section from "./Section";
-import Title from "./Title";
 
-export function Contact(props) {
+const links = [
+  {
+    label: "Email",
+    href: "mailto:christopherchang150@gmail.com",
+    Icon: GrMail,
+  },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/chrischang150/",
+    Icon: BsLinkedin,
+  },
+  {
+    label: "GitHub",
+    href: "https://github.com/chrischang5",
+    Icon: BsGithub,
+  },
+];
+
+// Row of icon-only contact links, shown under the About intro.
+export function Contact() {
   return (
-    <Section id="contact">
-      <Title title="contact" />
-      <div id="icons" className="flex flex-col py-10">
-        <a
-          href="mailto:christopherchang150@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex text-paragraph space-x-8"
-        >
-          <IconContext.Provider
-            value={{
-              color: props.darkMode ? "white" : "black",
-            }}
+    <div role="group" aria-label="Contact links" className="flex gap-3">
+      {links.map(({ label, href, Icon }) => {
+        const isExternal = href.startsWith("http");
+        return (
+          <a
+            key={label}
+            href={href}
+            aria-label={label}
+            title={label}
+            {...(isExternal && {
+              target: "_blank",
+              rel: "noopener noreferrer",
+            })}
+            className="flex h-12 w-12 items-center justify-center rounded-full bg-primary-200 text-dark transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-accent-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 dark:bg-primary-925 dark:text-light dark:hover:text-accent-400"
           >
-            <GrMail size={25} />
-          </IconContext.Provider>
-          <p className="text-dark dark:text-light">Email</p>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/chrischang150/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex text-paragraph space-x-8"
-        >
-          <IconContext.Provider
-            value={{
-              color: props.darkMode ? "white" : "black",
-            }}
-          >
-            <BsLinkedin size={25} />
-          </IconContext.Provider>
-          <p className="text-dark dark:text-light">
-            LinkedIn
-          </p>
-        </a>
-        <a
-          href="https://github.com/chrischang5"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex text-paragraph space-x-8"
-        >
-          <IconContext.Provider
-            value={{
-              color: props.darkMode ? "white" : "black",
-            }}
-          >
-            <BsGithub size={25} />
-          </IconContext.Provider>
-          <p className="text-dark dark:text-light">
-            GitHub
-          </p>
-        </a>
-      </div>
-    </Section>
+            <Icon size={22} />
+          </a>
+        );
+      })}
+    </div>
   );
 }

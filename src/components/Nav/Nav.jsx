@@ -6,7 +6,7 @@ import { Link } from "./Link";
 import { Namecard } from "./Namecard";
 import { BrowserRouter as Router } from "react-router-dom";
 
-const routes = ["about", "experience", "projects", "contact"];
+const routes = ["about", "experience", "projects"];
 
 function Nav(props) {
   const [isNavOpen, setIsNavOpen] = useState(false);
